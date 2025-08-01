@@ -738,6 +738,10 @@ body {
     color: #fff;
 }
 
+.Feature-icon{
+    font-size: 50px;
+    color: var(--color-primary);
+}
 /* Fonts */
 @font-face {
     font-family: 'koodak';

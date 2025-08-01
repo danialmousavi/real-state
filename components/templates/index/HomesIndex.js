@@ -6,7 +6,7 @@ export default function HomesIndex() {
   return (
     <div className="homes">
         {db.homes.slice(0,6).map(home=>(
-        <HomeCard {...home}/>
+        <HomeCard key={home.id} {...home}/>
         ))}
     </div>
   )
