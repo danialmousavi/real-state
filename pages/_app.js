@@ -1,133 +1,132 @@
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  //  / return <Component {...pageProps} />
   return (
     <>
-      <div class="container">
-        <div class="sidebar">
+      <div className="container">
+        <div className="sidebar">
           <input
             type="checkbox"
             name="toggle"
             id="sidebar-toggle"
-            class="sidebar__input"
+            className="sidebar__input"
           />
-          <label for="sidebar-toggle" class="sidebar__label">
-            <div class="sidebar__btn"></div>
+          <label htmlFor="sidebar-toggle" className="sidebar__label">
+            <div className="sidebar__btn"></div>
           </label>
 
-          <div class="sidebar__bg"></div>
-          <ul class="list">
-            <li class="list__item">
-              <a href="index.html" class="list__link">
+          <div className="sidebar__bg"></div>
+          <ul className="list">
+            <li className="list__item">
+              <a href="index.html" className="list__link">
                 صفحه اصلی
               </a>
             </li>
-            <li class="list__item">
-              <a href="#" class="list__link">
+            <li className="list__item">
+              <a href="#" className="list__link">
                 ویژگی ها
               </a>
             </li>
-            <li class="list__item">
-              <a href="" class="list__link">
+            <li className="list__item">
+              <a href="" className="list__link">
                 نظرات
               </a>
             </li>
-            <li class="list__item">
-              <a href="houses.html" class="list__link">
+            <li className="list__item">
+              <a href="houses.html" className="list__link">
                 خانه ها
               </a>
             </li>
-            <li class="list__item">
-              <a href="#" class="list__link">
+            <li className="list__item">
+              <a href="#" className="list__link">
                 گالری
               </a>
             </li>
           </ul>
         </div>
 
-        <header class="header">
-          <img src="img/logo.png" alt="Nexter Logo" class="header__logo" />
-          <h3 class="u-heading-3 u-heading--light">خانه خودتان:</h3>
-          <h1 class="u-heading-1">با خرید خانه نهایت آزادی را احساس کنید</h1>
-          <a href="#houses" class="btn header__btn btn-brown">
+        <header className="header">
+          <img src="/img/logo.png" alt="Nexter Logo" className="header__logo" />
+          <h3 className="u-heading-3 u-heading--light">خانه خودتان:</h3>
+          <h1 className="u-heading-1">با خرید خانه نهایت آزادی را احساس کنید</h1>
+          <a href="#houses" className="btn header__btn btn-brown">
             لیست خانه ها
           </a>
         </header>
 
-        <div class="real-tors">
-          <p class="real-tors__tittle">سه خانه پر طرفدار</p>
-          <div class="real-tors__list">
+        <div className="real-tors">
+          <p className="real-tors__tittle">سه خانه پر طرفدار</p>
+          <div className="real-tors__list">
             <img
-              src="img/house-2.jpeg"
+              src="/img/house-2.jpeg"
               alt="real-tors top 1"
-              class="real-tors__img"
+              className="real-tors__img"
             />
-            <div class="real-tors__details">
-              <h3 class="u-heading-3 u-heading--white">کاخ سفید</h3>
-              <p class="real-tors__text">869 فروش خانه</p>
+            <div className="real-tors__details">
+              <h3 className="u-heading-3 u-heading--white">کاخ سفید</h3>
+              <p className="real-tors__text">869 فروش خانه</p>
             </div>
 
             <img
-              src="img/house-3.jpeg"
+              src="/img/house-3.jpeg"
               alt="real-tors top 2"
-              class="real-tors__img"
+              className="real-tors__img"
             />
-            <div class="real-tors__details">
-              <h3 class="u-heading-3 u-heading--white">باغ سبز</h3>
-              <p class="real-tors__text">243 فروش خانه</p>
+            <div className="real-tors__details">
+              <h3 className="u-heading-3 u-heading--white">باغ سبز</h3>
+              <p className="real-tors__text">243 فروش خانه</p>
             </div>
 
             <img
-              src="img/house-5.jpeg"
+              src="/img/house-5.jpeg"
               alt="real-tors top 3"
-              class="real-tors__img"
+              className="real-tors__img"
             />
-            <div class="real-tors__details">
-              <h3 class="u-heading-3 u-heading--white">ولای لواسون</h3>
-              <p class="real-tors__text">130 فروش خانه</p>
+            <div className="real-tors__details">
+              <h3 className="u-heading-3 u-heading--white">ولای لواسون</h3>
+              <p className="real-tors__text">130 فروش خانه</p>
             </div>
           </div>
         </div>
         <Component {...pageProps} />
       </div>
-      <footer class="footer">
-        <ul class="nav">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+      <footer className="footer">
+        <ul className="nav">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               خانه رویایی خود را پیدا کنید
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               درخواست پروپوزال
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               برنامه اجاره خانه ها
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               با ما تماس بگیرید
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               ملک خود را ارسال کنید
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               با ما کار کنید
             </a>
           </li>
         </ul>
 
-        <p class="copyright">
+        <p className="copyright">
           &copy; حقوق مادی معنوی این سایت برای
-          <strong class="copyright__name">مهدی ایلخانی نسب</strong>
+          <strong className="copyright__name">مهدی ایلخانی نسب</strong>
           محفوظ میباشد
         </p>
       </footer>
